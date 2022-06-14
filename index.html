@@ -1,75 +1,79 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Nerds</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>Nerds</title>
 </head>
 
-<body>
+<body class="page-body">
 
-  <header>
-    <nav>
-      <a><img src="img/logo/logo-index.svg" alt="Логотип компании Nerds" width="160" height="65"></a>
-      <ul>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo/logo-index.svg" alt="Логотип компании Nerds" width="160" height="65">
+      </a>
+      <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
-      <a href="blank.html">Корзина</a>
+      <a class="cart-link" href="blank.html">Корзина</a>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
     <h1>Интернет магазин Nerd's</h1>
 
-    <section>
+    <section class="slogan">
       <h2>Слоган компании</h2>
       <p>Долго, дорого,скрупулезно.</p>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a href="blank.html">Узнать больше</a>
+      <a class="button button-slogan" href="blank.html">Узнать больше</a>
       <img src="img/slides/phones.png" alt="Рекламный щит с телефонами" width="760" height="431">
     </section>
 
-    <section>
+    <section class="service">
       <h2>Список услуг компании</h2>
-      <ul>
-        <li>
+      <ul class="service-list">
+        <li class="service-item">
           <img src="img/service/laptop.png" alt="Ноутбук" width="300" height="146">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="blank.html">Заказать</a>
+          <a class="button button-laptop" href="blank.html">Заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <img src="img/service/phones.png" alt="Телефоны" width="300" height="146">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="blank.html">Заказать</a>
+          <a class="button button-phones" href="blank.html">Заказать</a>
         </li>
-      <li>
+      <li class="service-item">
           <img src="img/service/presentation.png" alt="Экран планшета с презентацией" width="300" height="146">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="blank.html">Заказать</a>
+          <a class="button button-presentation" href="blank.html">Заказать</a>
         </li>
       </ul>
-    </section>service/
+    </section>
 
-    <section>
+    <section class="about-company">
       <h2>О компании</h2>
       <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h3>Выполняем заказы на разработку:</h3>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      <ul class="features-list">
+        <li class="feateres-item">Веб-сайтов любой сложности</li>
+        <li class="feateres-item">Мобильных приложений для iOS и Android</li>
+        <li class="feateres-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
       <img src="img/logo/logo-company.png" alt="Логотип компании nerds" width="360" height="208">
       <h3>с 2004 года Любим точность во всем:</h3>
@@ -83,38 +87,39 @@
       </dl>
     </section>
 
-    <section>
+    <section class="clients">
       <h2>Клиенты компании</h2>
-      <ul>
-        <li><a href="blank.html"><img src="img/clients/company-htmlacademy.svg" alt="Логотип компании html academy" width="199" height="57"></a></li>
-        <li><a href="blank.html"><img src="img/clients/company-borodinski.png" alt="Логотип компании barbershop baradinsky " width="209" height="90"></a></li>
-        <li><a href="blank.html"><img src="img/clients/company-pink.png" alt="Логотип компании pink" width="185" height="52"></a></li>
-        <li><a href="blank.html"><img src="img/clients/company-mishka.png" alt="Логотип компании mishka" width="173" height="84"></a></li>
+      <ul class="client-list">
+        <li class="client-item"><a href="blank.html"><img src="img/clients/company-htmlacademy.svg" alt="Логотип компании html academy" width="199" height="57"></a></li>
+        <li class="client-item"><a href="blank.html"><img src="img/clients/company-borodinski.png" alt="Логотип компании barbershop baradinsky " width="209" height="90"></a></li>
+        <li class="client-item"><a href="blank.html"><img src="img/clients/company-pink.png" alt="Логотип компании pink" width="185" height="52"></a></li>
+        <li class="client-item"><a href="blank.html"><img src="img/clients/company-mishka.png" alt="Логотип компании mishka" width="173" height="84"></a></li>
       </ul>
     </section>
 
-    <section>
+    <section class="contacts">
       <h2>Контакты компании</h2>
       <p>NЁRDS DESIGN STUDIO</p>i
       <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <a href="blank.html">Напишите нам</a>
+      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="button button-contacts" href="blank.html">Напишите нам</a>
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <h2>Социальные сети компании</h2>
-    <ul>
-      <li><a href="blank.html">Vk</a></li>
-      <li><a href="blank.html">F</a></li>
-      <li><a href="blank.html">Instagram</a></li>
+    <ul class="footer-social">
+      <li><a class="social-button" href="blank.html">Vk</a></li>
+      <li><a class="social-button" href="blank.html">F</a></li>
+      <li><a class="social-button" href="blank.html">Instagram</a></li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
-
+  
 </body>
 </html>
+
 
 
 
