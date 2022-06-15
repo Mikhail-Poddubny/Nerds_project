@@ -6,10 +6,11 @@
 --basic-medium-green: #00CA74;
 --basic-white: #FFFFFF;
 --basic-pale-grey: #EEEEEE;
+--basic-active: rgba(0, 0, 0, 0.3)
 }
 
 
-/* Global*/
+/* Global */
 
 .page-body {
   min-width: 1440px;
@@ -17,13 +18,10 @@
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
   color: var(--basic-dark-grey-blue);
   background-color: var(--basic-white);
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -35,10 +33,53 @@ img {
 
 .main-navigation {
   line-height: 30px;
-  color: var(--basic-black);
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: var(--basic-pale-grey);
 }
 
 .site-navigation {
   list-style: none;
+}
+
+.site-navigation a  {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-rose-red)
+}
+
+.site-navigation a:active {
+  color: var(--basic-active)
+  
+}
+
+.cart-link-header {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.cart-link-header:hover {
+  color: var(--basic-rose-red)
+}
+
+.cart-link-header:active {
+  color: var(--basic-active)
+}
+
+/* Slogan */
+
+.slogan {
+  background-color: var(--basic-pale-grey) ;
+}
+
+.button {
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: var(--basic-rose-red);
 }
