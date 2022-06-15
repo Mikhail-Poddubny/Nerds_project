@@ -11,7 +11,7 @@
 
 /* Global*/
 
-body {
+.page-body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
