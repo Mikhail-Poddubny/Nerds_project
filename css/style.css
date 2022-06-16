@@ -6,7 +6,15 @@
 --basic-medium-green: #00CA74;
 --basic-white: #FFFFFF;
 --basic-pale-grey: #EEEEEE;
---basic-active: rgba(0, 0, 0, 0.3)
+--button-hover: #E74246;
+--buton-active: #D7373B;
+--button-green-hover: #00BC6C;
+--button-green-active: #00AA62; 
+--button-yellow: #EFC849;
+--button-yellow-hover: #EAB534;
+--button-yellow-active: #E5A722;
+--contacts: #666666;
+--discount: #444444;
 }
 
 
@@ -24,18 +32,23 @@
   background-color: var(--basic-white);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Main navigation */
+
 
 .main-navigation {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   background-color: var(--basic-pale-grey);
+}
+
+.main-header-logo img:hover {
+  opacity: 0.7;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
 }
 
 .site-navigation {
@@ -52,7 +65,8 @@ img {
 }
 
 .site-navigation a:active {
-  color: var(--basic-active)
+  opacity: 0.3;
+  color: var(--basic-black)
   
 }
 
@@ -66,7 +80,8 @@ img {
 }
 
 .cart-link-header:active {
-  color: var(--basic-active)
+  opacity: 0.3;
+  color: var(--basic-black)
 }
 
 /* Slogan */
@@ -75,11 +90,206 @@ img {
   background-color: var(--basic-pale-grey) ;
 }
 
+.slogan-list {
+  list-style: none;
+}
+.slogan-text {
+  font-size:  55px;
+  line-height: 55px;;
+  font-weight: 500;
+}
+
+.button-slogan {
+  background-color: var(--basic-rose-red);
+}
+
+.button-slogan:hover {
+  background-color: var(--button-hover)
+}
+.button-slogan:active {
+  background-color: var(--buton-active);
+  opacity: 0.3;
+}
+
+/* Service */
+
+.service-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black)
+}
+.button-red {
+  background-color: var(--basic-rose-red)
+}
+
+.button-red:hover {
+  background-color: var(--button-hover);
+}
+
+.button-red:active {
+  background-color: var(--buton-active);
+  opacity: 0.3;
+}
+
+.button-green {
+  background-color: var(--basic-medium-green)
+}
+
+.button-green:hover {
+  background-color: var(--button-green-hover);
+}
+
+.button-green:active {
+  background-color: var(--button-green-active);
+  opacity: 0.3;
+}
+
+.button-yellow {
+  background-color: var(--button-yellow)
+}
+
+.button-yellow:hover {
+  background-color: var(--button-yellow-hover);
+}
+
+.button-yellow:active {
+  background-color: var(--button-yellow-hover);
+  opacity: 0.3;
+}
+
+
+/* about company */
+.about-company h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-about {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black)
+}
+
+.features-list {
+  list-style: none;
+}
+
+.advantages h3 {
+  color: var(--basic-black)
+}
+
+.advantages dt {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black)
+  
+}
+
+/* Clients */
+
+.clients-list {
+  list-style: none;
+}
+
+.clients-item img {
+  opacity: 0.2;
+}
+
+.clients-item img:hover {
+  opacity: 1;
+}
+
+
+.clients-item img:active {
+  opacity: 0.1;
+}
+
+
+
+/* contacts */
+
+
+.contacts-headline {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black)
+  
+}
+
+.contacts-subtitle {
+  color: var(--contacts)
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: var(--contacts)
+}
+
+.button-contacts {
+  background-color: var(--basic-rose-red);
+}
+
+.button-contacts:hover {
+  background-color: var(--button-hover);
+}
+
+.button-contacts:active {
+  background-color: var(--buton-active);
+  opacity: 0.3;
+}
+
+/* main-footer */
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button  {
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+
+}
+
+.social-button:hover  {
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.social-button:active  {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.call-to-action {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+
+.discount {
+  color: var(--discount);
+  line-height: 22px;
+}
+
+/* Button */
+
 .button {
+  text-align: center;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-white);
-  background-color: var(--basic-rose-red);
 }
+
