@@ -2,17 +2,18 @@
 :root {
 --basic-black: #000000;
 --basic-dark-grey-blue: #283136;
---basic-rose-red: #FB565A;
---basic-medium-green: #00CA74;
 --basic-white: #FFFFFF;
 --basic-pale-grey: #EEEEEE;
---button-hover: #E74246;
---buton-active: #D7373B;
---button-green-hover: #00BC6C;
---button-green-active: #00AA62; 
---button-yellow: #EFC849;
---button-yellow-hover: #EAB534;
---button-yellow-active: #E5A722;
+--basic-red: #FB565A;
+--basic-red-hover: #E74246;
+--basic-red-active: #D7373B;
+--basic-green: #00CA74;
+--basic-green-hover: #00BC6C;
+--basic-green-active: #00AA62; 
+--basic-yellow: #EFC849;
+--basic-yellow-hover: #EAB534;
+--basic-yellow-active: #E5A722;
+--basic-text-active: rgba(255, 255, 255, 0.3);
 --contacts: #666666;
 --discount: #444444;
 }
@@ -61,7 +62,7 @@
 }
 
 .site-navigation a:hover {
-  color: var(--basic-rose-red)
+  color: var(--basic-red-hover)
 }
 
 .site-navigation a:active {
@@ -76,12 +77,12 @@
 }
 
 .cart-link-header:hover {
-  color: var(--basic-rose-red)
+  color: var(--basic-red-hover)
 }
 
 .cart-link-header:active {
   opacity: 0.3;
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 
 /* Slogan */
@@ -100,15 +101,16 @@
 }
 
 .button-slogan {
-  background-color: var(--basic-rose-red);
+  background-color: var(--basic-red);
 }
 
 .button-slogan:hover {
-  background-color: var(--button-hover)
+  background-color: var(--basic-red-hover)
 }
 .button-slogan:active {
-  background-color: var(--buton-active);
-  opacity: 0.3;
+  background-color: var(--basic-red-active);
+  color: var(--basic-text-active);
+  
 }
 
 /* Service */
@@ -122,45 +124,45 @@
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 .button-red {
-  background-color: var(--basic-rose-red)
+  background-color: var(--basic-red);
 }
 
 .button-red:hover {
-  background-color: var(--button-hover);
+  background-color: var(--basic-red-hover);
 }
 
 .button-red:active {
-  background-color: var(--buton-active);
-  opacity: 0.3;
+  background-color: var(--basic-red-active);
+  color: var(--basic-text-active);
 }
 
 .button-green {
-  background-color: var(--basic-medium-green)
+  background-color: var(--basic-green);
 }
 
 .button-green:hover {
-  background-color: var(--button-green-hover);
+  background-color: var(--basic-green-hover);
 }
 
 .button-green:active {
-  background-color: var(--button-green-active);
-  opacity: 0.3;
+  background-color: var(--basic-green-active);
+  color: var(--basic-text-active);
 }
 
 .button-yellow {
-  background-color: var(--button-yellow)
+  background-color: var(--basic-yellow);
 }
 
 .button-yellow:hover {
-  background-color: var(--button-yellow-hover);
+  background-color: var(--basic-yellow-hover);
 }
 
 .button-yellow:active {
-  background-color: var(--button-yellow-hover);
-  opacity: 0.3;
+  background-color: var(--basic-yellow-active);
+  color: var(--basic-text-active);
 }
 
 
@@ -175,7 +177,7 @@
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 
 .features-list {
@@ -183,14 +185,14 @@
 }
 
 .advantages h3 {
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 
 .advantages dt {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
-  color: var(--basic-black)
+  color: var(--basic-black);
   
 }
 
@@ -228,25 +230,25 @@
 }
 
 .contacts-subtitle {
-  color: var(--contacts)
+  color: var(--contacts);
 }
 
 .contacts-phone {
   text-decoration: none;
-  color: var(--contacts)
+  color: var(--contacts);
 }
 
 .button-contacts {
-  background-color: var(--basic-rose-red);
+  background-color: var(--basic-red);
 }
 
 .button-contacts:hover {
-  background-color: var(--button-hover);
+  background-color: var(--basic-red-hover);
 }
 
 .button-contacts:active {
-  background-color: var(--buton-active);
-  opacity: 0.3;
+  background-color: var(--basic-red-active);
+  color: var(--basic-text-active);
 }
 
 /* main-footer */
@@ -266,7 +268,7 @@
 
 .social-button:active  {
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  
 }
 
 .call-to-action {
@@ -292,4 +294,59 @@
   text-decoration: none;
   color: var(--basic-white);
 }
+ 
 
+/* Catalog */
+
+.store {
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: var(--basic-pale-grey);
+}
+
+.filter fieldset {
+  border: none;  
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter-button {
+  color: var(--basic-black);
+  background-color: var(--basic-pale-grey);
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+  opacity: 0.3;
+  
+}
+
+.pagination-list {
+  list-style: none;
+}
+.pagination-item {
+  text-decoration: none;
+}
